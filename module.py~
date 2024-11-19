@@ -9,10 +9,10 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
         self.request.sendall(self.data.upper())
 
 
-if __name__=="__main__":
+if __name__=="main":
     HOST, PORT= "localhost",9999
     server=SocketServer.TCPServer((HOST,PORT),MyTCPHandler)
-    server.serve_forever()
+    server.serve_foreever()
 
 
 
